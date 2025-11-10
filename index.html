@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio of Aashman Singh Verma — AIML student. Projects across AI/ML, IoT, and DevOps with clean UI/UX and automated CI/CD."
+    />
+    <meta property="og:title" content="Aashman Singh Verma — Portfolio" />
+    <meta
+      property="og:description"
+      content="AI/ML • IoT • DevOps. Clean UI/UX, real projects, and automated CI/CD."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://not-aashman.github.io" />
+    <meta
+      property="og:image"
+      content="https://not-aashman.github.io/favicon-512.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Aashman Singh Verma — Portfolio" />
+    <meta
+      name="twitter:description"
+      content="AI/ML • IoT • DevOps. Clean UI/UX, real projects, and automated CI/CD."
+    />
+    <meta
+      name="twitter:image"
+      content="https://not-aashman.github.io/favicon-512.png"
+    />
+
+    <title>Anurag — Portfolio</title>
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="apple-touch-icon-180.png"
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+    <meta
+      name="description"
+      content="Aashman — Portfolio: projects, skills, contact."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=2025-11-09-1">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a href="#" class="logo">A<span>K</span></a>
+        <nav class="links">
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+          <a href="#contact" class="btn">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Anurag</span>.</h1>
+        <p class="lede">
+          Tech enthusiast exploring the bridge between
+          <strong>hardware, software, and AI/ML</strong> — passionate about
+          design, performance, and everything in between.
+        </p>
+
+        <div class="cta">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#contact" class="ghost">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container section">
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <a
+          class="card"
+          href="https://cropcure-home.vercel.app/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Crop Cure Project"
+        >
+          <h3>Crop Cure 🌿🤖</h3>
+          <p>
+            AI-powered web app that helps farmers identify crop diseases simply
+            by uploading a photo of the plant. Built with a focus on
+            accessibility and agricultural innovation.
+          </p>
+          <ul class="tags">
+            <li>AI/ML</li>
+            <li>Web App</li>
+            <li>Computer Vision</li>
+          </ul>
+        </a>
+
+        
+         
+
+       
+      </div>
+    </section>
+
+    <section id="skills" class="container section">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>C++</li>
+        <li>AI/ML Fundamentals</li>
+        <li>UI/UX Design</li>
+        <li>Flutter Development</li>
+        <li>SQL</li>
+        <li>Android Application Development</li>
+      </ul>
+    </section>
+
+    <section id="languages" class="container section">
+      <h2>Languages</h2>
+      <ul class="skills">
+        <li>English (Fluent)</li>
+        <li>Hindi (Native)</li>
+        
+      </ul>
+    </section>
+
+    <section id="about" class="container section">
+      <h2>About</h2>
+      <p>
+        My adaptability, quick learning abilities, problem-solving skills, and passion for innovation make me
+        an ideal candidate for dynamic and challenging software development projects. I am enthusiastic
+        about the prospect of contributing to your team and working together to achieve outstanding
+        results in software development.
+      </p>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2>Contact</h2>
+      <form
+        action="https://formspree.io/f/xjkjbdnp"
+        method="POST"
+        class="contact-form"
+      >
+        <input name="name" placeholder="Your name" required />
+        <input
+          type="email"
+          name="email"
+          placeholder="you@example.com"
+          required
+        />
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Say hi…"
+          required
+        ></textarea>
+        <button id="sendBtn" class="btn" type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer class="site-footer">
+      <p class="credits">
+        Made with <span class="heart">🩵</span> by <strong>Anurag</strong>
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <script>
+      // Reveal sections as they enter viewport
+      const observer = new IntersectionObserver(
+        (entries) =>
+          entries.forEach(
+            (e) => e.isIntersecting && e.target.classList.add("reveal-in")
+          ),
+        { root: null, rootMargin: "0px 0px -10% 0px", threshold: 0.1 }
+      );
+      document.querySelectorAll(".section").forEach((s) => {
+        s.classList.add("reveal");
+        observer.observe(s);
+      });
+    </script>
+
+    <script>
+      // Lightweight submit feedback
+      const form = document.querySelector("form");
+      const btn = document.getElementById("sendBtn");
+      if (form && btn) {
+        form.addEventListener("submit", () => {
+          btn.disabled = true;
+          btn.textContent = "Sending…";
+          btn.style.opacity = 0.85;
+        });
+      }
+    </script>
+  </body>
+</html>
