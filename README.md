@@ -1,5 +1,4 @@
-# 🌐 Personal Portfolio Website — Aashman Singh Verma
-![Deploy Portfolio Website](https://github.com/not-aashman/not-aashman.github.io/actions/workflows/deploy.yml/badge.svg)
+# 🌐 Personal Portfolio Website —Anurag Kushwaha
 
 ### Live Site  
 🔗 **[OPEN WEBSITE](https://anurag-k-port.vercel.app/)**  
@@ -94,9 +93,9 @@ jobs:
 ---
 
 ## 🧾 Author
-**Aashman Singh Verma**  
-Enrollment No: `LNCCBCT11101`  
-Class Roll No: `02`
+**Anurag Kushwaha**  
+Enrollment No: `LNCCBTC11111`  
+Class Roll No: `11`
 
 ---
 
